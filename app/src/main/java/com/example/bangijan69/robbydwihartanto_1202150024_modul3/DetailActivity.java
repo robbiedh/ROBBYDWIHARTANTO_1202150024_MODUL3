@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -54,6 +55,7 @@ int count=1;
 
     public void tambah(View view) {
         if (count==6){ // jika =6 tidak melakukan apa apa
+            Toast.makeText(DetailActivity.this, "air penuh", Toast.LENGTH_LONG).show();
 
         }else {
             count++; // increament
@@ -65,7 +67,7 @@ int count=1;
 
     public void kurang(View view) {
         if(count==1){ // jika =1 tidak melakukan apa apa
-
+            Toast.makeText(DetailActivity.this, "air habis", Toast.LENGTH_LONG).show();
         }
         else {
             count--; //dikurangi
